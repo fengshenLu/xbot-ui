@@ -75,7 +75,7 @@
                 <span class="flex-row">
                       <span class="property-name">标签</span>
                       <div v-if='taskInfo.label && taskInfo.label.length' style='display: flex; flex-wrap: wrap'>
-                         <span v-for="(item,index) in taskInfo.label" class="property-tag" :key="index">{{item.name}}</span>
+                         <span v-for="(item,index) in JSON.parse(taskInfo.label)" class="property-tag" :key="index">{{item.name}}</span>
                       </div>
                 </span>
                 <span class="flex-row">

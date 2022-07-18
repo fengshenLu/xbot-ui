@@ -45,5 +45,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
       - taskInfo- 任务卡片信息 object 默认{}
       - needButton- 是否需要功能按钮列表气泡 Boolean 默认 false
       ~~- cardTaskOwnerClass- 自定义样式class 用于修改card样式~~
-    - slot {buttonList} 功能按钮列表，需要配合:needButton = true使用   
+    - slot {buttonList} 功能按钮列表，需要配合:needButton = true使用  
+    - method @titleClick 点击任务名自定义事件 默认返回参数taskInfo卡片信息
   -...
