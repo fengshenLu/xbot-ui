@@ -1,6 +1,6 @@
 {
-  "name": "xbotui-vue3-antd1",
-  "version": "0.1.0",
+  "name": "xbotui-vue3-antd",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

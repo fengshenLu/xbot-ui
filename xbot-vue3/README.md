@@ -1,4 +1,4 @@
-# common-tools
+# xbotui-vue3-antd
 
 ## Project setup
 ```
@@ -20,9 +20,9 @@ npm run build
 npm run test:unit
 ```
 
-### Lints and fixes files
+### libs
 ```
-npm run lint
+npm run lib
 ```
 
 ### Customize configuration
@@ -30,11 +30,20 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### TODO Lists
 
-- 关系：
-    - WS: 工作台
-    - Father: 组件调用方
-    - Child: 通用组件
-    - Tool: 子工具
+- 组件库项目依赖：
+    - antd: antd 组件库
+    - vue: vue3.0
 
-- 须实现的方法：
-    - Child 在组件 `mount` 生命周期中上报 `mount` 状态 
+- 组件库引入方式：
+    - npm i xbotui-vue3-antd
+    - import taskCard from 'xbotui-vue3-antd'
+    - import 'xbotui-vue3-antd/libs/xbotui-vue3-antd.css'
+    - vue.use(taskCard)
+- 组件使用方式：
+  - taskCard
+    - props {taskInfo, needButton ~~cardTaskOwnerClass~~}
+      - taskInfo- 任务卡片信息 object 默认{}
+      - needButton- 是否需要功能按钮列表气泡 Boolean 默认 false
+      ~~- cardTaskOwnerClass- 自定义样式class 用于修改card样式~~
+    - slot {buttonList} 功能按钮列表，需要配合:needButton = true使用   
+  -...
