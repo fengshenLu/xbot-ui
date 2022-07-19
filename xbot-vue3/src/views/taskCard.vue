@@ -4,8 +4,8 @@
       <div class="flex-column flex-1">
         <div class="flex-row">
           <span class="flex-1 sc-title">{{taskInfo.projectName || '中国数字城市档案馆'}}</span>
-          <div class="progress-dot"></div>
-          <span class="progress-text">进行中</span>
+          <div class="progress-dot" :style="{ backgroundColor: taskInfo.status ? taskInfo.status==1 ? '' : '#8ed226' : '#9DAAC2' }"></div>
+          <span class="progress-text">{{taskInfo.status ? taskInfo.status==1 ? '进行中' : '已完成' : '未开始' }}</span>
         </div>
         <div class="title" @click.stop="handleClickTitle" >{{taskInfo.taskName || '万达国际图纸校审'}}</div>
         <div class="manager-text">主责人：{{taskInfo.mainUser ? taskInfo.mainUser.map(item => item.name).join(' ') : '刘永霖'}}</div>
@@ -72,7 +72,7 @@
                 </span>
                 <span class="flex-row">
                       <span class="property-name">任务模板</span>
-                      <span class="property-text">{{taskInfo.formModel}}</span>
+                      <span class="property-text">{{taskInfo.templateName}}</span>
                 </span>
                 <span class="flex-row">
                       <span class="property-name">标签</span>
@@ -86,7 +86,7 @@
                 </span>
                 <span class="flex-row">
                       <span class="property-name">创建日期</span>
-                      <span class="property-text" v-if="taskInfo.deliveryStartTime">{{taskInfo.deliveryStartTime.slice(0, 10)}}</span>
+                      <span class="property-text" v-if="taskInfo.createTime">{{taskInfo.createTime.slice(0, 10)}}</span>
                 </span>
             </span>
     </a-drawer>

@@ -133,7 +133,7 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(203);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-85.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=template&id=100d083c
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-85.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=template&id=58fe4d6a
 
 const _hoisted_1 = {
   class: "review-card flex-column"
@@ -147,129 +147,123 @@ const _hoisted_3 = {
 const _hoisted_4 = {
   class: "flex-1 sc-title"
 };
-
-const _hoisted_5 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
-  class: "progress-dot"
-}, null, -1);
-
-const _hoisted_6 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_5 = {
   class: "progress-text"
-}, "进行中", -1);
-
-const _hoisted_7 = {
+};
+const _hoisted_6 = {
   class: "manager-text"
 };
-const _hoisted_8 = {
+const _hoisted_7 = {
   class: "flex-row",
   style: {
     "justify-content": "space-between",
     "color": "#6d7b98"
   }
 };
-const _hoisted_9 = {
+const _hoisted_8 = {
   key: 0
 };
-const _hoisted_10 = {
+const _hoisted_9 = {
   key: 1
 };
 
-const _hoisted_11 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+const _hoisted_10 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
   class: "pointSet"
 }, [/*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "fontSet"
 }, "...")], -1);
 
-const _hoisted_12 = {
+const _hoisted_11 = {
   key: 1,
   class: "pointSet"
 };
 
-const _hoisted_13 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_12 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "fontSet"
 }, "...", -1);
 
-const _hoisted_14 = [_hoisted_13];
-const _hoisted_15 = {
+const _hoisted_13 = [_hoisted_12];
+const _hoisted_14 = {
   key: 0,
   class: "displayUser"
 };
-const _hoisted_16 = {
+const _hoisted_15 = {
   class: "displayUser"
 };
-const _hoisted_17 = {
+const _hoisted_16 = {
   class: "addUser"
 };
-const _hoisted_18 = {
+const _hoisted_17 = {
   class: "flex-column drawer-body"
 };
-const _hoisted_19 = {
+const _hoisted_18 = {
   class: "flex-row"
 };
 
-const _hoisted_20 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_19 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "任务名称", -1);
 
-const _hoisted_21 = {
+const _hoisted_20 = {
   class: "property-text"
 };
-const _hoisted_22 = {
+const _hoisted_21 = {
   class: "flex-row"
 };
 
-const _hoisted_23 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_22 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "创建人", -1);
 
-const _hoisted_24 = {
+const _hoisted_23 = {
   class: "property-text"
 };
-const _hoisted_25 = {
+const _hoisted_24 = {
   class: "flex-row"
 };
 
-const _hoisted_26 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_25 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "任务模板", -1);
 
-const _hoisted_27 = {
+const _hoisted_26 = {
   class: "property-text"
 };
-const _hoisted_28 = {
+const _hoisted_27 = {
   class: "flex-row"
 };
 
-const _hoisted_29 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_28 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "标签", -1);
 
-const _hoisted_30 = {
+const _hoisted_29 = {
   key: 0,
   style: {
     "display": "flex",
     "flex-wrap": "wrap"
   }
 };
-const _hoisted_31 = {
+const _hoisted_30 = {
   class: "flex-row"
 };
 
-const _hoisted_32 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_31 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "任务编号", -1);
 
-const _hoisted_33 = {
+const _hoisted_32 = {
   class: "property-text"
 };
-const _hoisted_34 = {
+const _hoisted_33 = {
   class: "flex-row"
 };
 
-const _hoisted_35 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+const _hoisted_34 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
 }, "创建日期", -1);
 
-const _hoisted_36 = {
+const _hoisted_35 = {
   key: 0,
   class: "property-text"
 };
@@ -281,16 +275,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
     class: "card",
     onClick: _cache[2] || (_cache[2] = $event => $options.handleChange(true))
-  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_4, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.projectName || '中国数字城市档案馆'), 1), _hoisted_5, _hoisted_6]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_2, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_3, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_4, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.projectName || '中国数字城市档案馆'), 1), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+    class: "progress-dot",
+    style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
+      backgroundColor: $props.taskInfo.status ? $props.taskInfo.status == 1 ? '' : '#8ed226' : '#9DAAC2'
+    })
+  }, null, 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_5, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.status ? $props.taskInfo.status == 1 ? '进行中' : '已完成' : '未开始'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
     class: "title",
     onClick: _cache[0] || (_cache[0] = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withModifiers)((...args) => $options.handleClickTitle && $options.handleClickTitle(...args), ["stop"]))
-  }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_7, "主责人：" + (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.mainUser ? $props.taskInfo.mainUser.map(item => item.name).join(' ') : '刘永霖'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_8, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+  }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_6, "主责人：" + (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.mainUser ? $props.taskInfo.mainUser.map(item => item.name).join(' ') : '刘永霖'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_7, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)([{
       "font-size": "12px"
     }, {
       color: $props.taskInfo.overDueDay > 0 ? '#F43030' : ''
     }])
-  }, [$props.taskInfo.deliveryEndTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_9, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.deliveryEndTime.slice(0, 10)) + " 截止", 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), $props.taskInfo.overDueDay > 0 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_10, " 逾期" + (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.overDueDay) + "天 ", 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 4), $props.needButton ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createBlock)(_component_a_popover, {
+  }, [$props.taskInfo.deliveryEndTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_8, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.deliveryEndTime.slice(0, 10)) + " 截止", 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), $props.taskInfo.overDueDay > 0 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_9, " 逾期" + (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.overDueDay) + "天 ", 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 4), $props.needButton ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createBlock)(_component_a_popover, {
     key: 0,
     overlayClassName: "myPopClass",
     trigger: "hover",
@@ -303,9 +302,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     content: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderSlot)(_ctx.$slots, "buttonList", {
       class: "buttonList"
     })]),
-    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [_hoisted_11]),
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [_hoisted_10]),
     _: 3
-  })) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_12, _hoisted_14))])]), $props.taskInfo.synergicUserInfo && $props.taskInfo.synergicUserInfo.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_15, [$props.taskInfo.synergicUserInfo.length <= 3 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, {
+  })) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_11, _hoisted_13))])]), $props.taskInfo.synergicUserInfo && $props.taskInfo.synergicUserInfo.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_14, [$props.taskInfo.synergicUserInfo.length <= 3 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, {
     key: 0
   }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo, (item, index) => {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
@@ -328,13 +327,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     },
     placement: "bottomLeft"
   }, {
-    content: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_16, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo.slice(3), (item, index) => {
+    content: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_15, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo.slice(3), (item, index) => {
       return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
         class: "userCard",
         key: index
       }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(item.name.slice(-2)), 1);
     }), 128))])]),
-    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_17, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(`+${$props.taskInfo.synergicUserInfo.length - 3}`), 1)]),
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_16, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(`+${$props.taskInfo.synergicUserInfo.length - 3}`), 1)]),
     _: 1
   })], 64))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_a_drawer, {
     width: "360",
@@ -349,16 +348,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClose: _cache[1] || (_cache[1] = $event => $options.handleChange(false)),
     visible: $data.drawerVisible
   }, {
-    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_18, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_19, [_hoisted_20, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_21, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_22, [_hoisted_23, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_24, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createByName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_25, [_hoisted_26, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_27, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.formModel), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_28, [_hoisted_29, $props.taskInfo.label && $props.taskInfo.label.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_30, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.label, (item, index) => {
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_17, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_18, [_hoisted_19, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_20, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_21, [_hoisted_22, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_23, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createByName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_24, [_hoisted_25, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_26, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.templateName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_27, [_hoisted_28, $props.taskInfo.label && $props.taskInfo.label.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_29, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)(JSON.parse($props.taskInfo.label), (item, index) => {
       return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", {
         class: "property-tag",
         key: index
       }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(item.name), 1);
-    }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_31, [_hoisted_32, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_33, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskCode), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_34, [_hoisted_35, $props.taskInfo.deliveryStartTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_36, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.deliveryStartTime.slice(0, 10)), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])])]),
+    }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_30, [_hoisted_31, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_32, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskCode), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_33, [_hoisted_34, $props.taskInfo.createTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_35, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createTime.slice(0, 10)), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])])]),
     _: 1
   }, 8, ["title", "visible"])]);
 }
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=100d083c
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=58fe4d6a
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-85.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=script&lang=js
 /* harmony default export */ var taskCardvue_type_script_lang_js = ({
@@ -398,10 +397,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-77.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-77.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-77.use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-77.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=style&index=0&id=100d083c&lang=less
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-77.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-77.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-77.use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-77.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=style&index=0&id=58fe4d6a&lang=less
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=100d083c&lang=less
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=58fe4d6a&lang=less
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(66);

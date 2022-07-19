@@ -64,7 +64,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=2ab00314&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=79acef9a&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -86,10 +86,13 @@ var render = function render() {
   }, [_c('span', {
     staticClass: "flex-1 sc-title"
   }, [_vm._v(_vm._s(_vm.taskInfo.projectName || '中国数字城市档案馆'))]), _c('div', {
-    staticClass: "progress-dot"
+    staticClass: "progress-dot",
+    style: {
+      backgroundColor: _vm.taskInfo.status ? _vm.taskInfo.status == 1 ? '' : '#8ed226' : '#9DAAC2'
+    }
   }), _c('span', {
     staticClass: "progress-text"
-  }, [_vm._v("进行中")])]), _c('div', {
+  }, [_vm._v(_vm._s(_vm.taskInfo.status ? _vm.taskInfo.status == 1 ? '进行中' : '已完成' : '未开始'))])]), _c('div', {
     staticClass: "title",
     on: {
       "click": function ($event) {
@@ -201,7 +204,7 @@ var render = function render() {
     staticClass: "property-name"
   }, [_vm._v("任务模板")]), _c('span', {
     staticClass: "property-text"
-  }, [_vm._v(_vm._s(_vm.taskInfo.formModel))])]), _c('span', {
+  }, [_vm._v(_vm._s(_vm.taskInfo.templateName))])]), _c('span', {
     staticClass: "flex-row"
   }, [_c('span', {
     staticClass: "property-name"
@@ -210,7 +213,7 @@ var render = function render() {
       "display": "flex",
       "flex-wrap": "wrap"
     }
-  }, _vm._l(_vm.taskInfo.label, function (item, index) {
+  }, _vm._l(JSON.parse(_vm.taskInfo.label), function (item, index) {
     return _c('span', {
       key: index,
       staticClass: "property-tag"
@@ -225,9 +228,9 @@ var render = function render() {
     staticClass: "flex-row"
   }, [_c('span', {
     staticClass: "property-name"
-  }, [_vm._v("创建日期")]), _vm.taskInfo.deliveryStartTime ? _c('span', {
+  }, [_vm._v("创建日期")]), _vm.taskInfo.createTime ? _c('span', {
     staticClass: "property-text"
-  }, [_vm._v(_vm._s(_vm.taskInfo.deliveryStartTime.slice(0, 10)))]) : _vm._e()])])])], 1);
+  }, [_vm._v(_vm._s(_vm.taskInfo.createTime.slice(0, 10)))]) : _vm._e()])])])], 1);
 };
 
 var staticRenderFns = [];
@@ -282,7 +285,7 @@ var staticRenderFns = [];
 //   deliveryEndTime: '2022-07-05 23:59:59',
 //   remainDay: -8,
 //   parentNodeId: '843086403416956928',
-//   label: [{ id: '814789590514790400', name: '方案技术深化' }, { id: '845634302597095424', name: '其他' }, { id: '845634302509015040', name: '管理' }],
+//   label:'',
 //   parentNodeName: '又一个大大项目',
 //   frontLabel: [
 //     '方案技术深化',
@@ -342,7 +345,7 @@ var staticRenderFns = [];
 //   deliveryStartTime: '2022-06-29 00:00:00',
 //   projectName: '又一个大大项目',
 //   projectId: '843086390233137152',
-//   status: 0,
+//   status: 2,
 //   cooperationUser: null,
 //   realityStartTime: null,
 //   realityEndTime: null
@@ -391,10 +394,10 @@ var staticRenderFns = [];
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js&
  /* harmony default export */ var views_taskCardvue_type_script_lang_js_ = (taskCardvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=2ab00314&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=79acef9a&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=2ab00314&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=79acef9a&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
