@@ -133,7 +133,7 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(203);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=template&id=58fe4d6a
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=template&id=3c44f64a
 
 const _hoisted_1 = {
   class: "review-card flex-column"
@@ -174,27 +174,28 @@ const _hoisted_10 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue
 }, "...")], -1);
 
 const _hoisted_11 = {
-  key: 1,
-  class: "pointSet"
-};
-
-const _hoisted_12 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
-  class: "fontSet"
-}, "...", -1);
-
-const _hoisted_13 = [_hoisted_12];
-const _hoisted_14 = {
   key: 0,
   class: "displayUser"
 };
-const _hoisted_15 = {
+const _hoisted_12 = {
   class: "displayUser"
 };
-const _hoisted_16 = {
+const _hoisted_13 = {
   class: "addUser"
 };
-const _hoisted_17 = {
+const _hoisted_14 = {
   class: "flex-column drawer-body"
+};
+const _hoisted_15 = {
+  class: "flex-row"
+};
+
+const _hoisted_16 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
+  class: "property-name"
+}, "任务名称", -1);
+
+const _hoisted_17 = {
+  class: "property-text"
 };
 const _hoisted_18 = {
   class: "flex-row"
@@ -202,7 +203,7 @@ const _hoisted_18 = {
 
 const _hoisted_19 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
-}, "任务名称", -1);
+}, "创建人", -1);
 
 const _hoisted_20 = {
   class: "property-text"
@@ -213,7 +214,7 @@ const _hoisted_21 = {
 
 const _hoisted_22 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
-}, "创建人", -1);
+}, "任务模板", -1);
 
 const _hoisted_23 = {
   class: "property-text"
@@ -224,10 +225,14 @@ const _hoisted_24 = {
 
 const _hoisted_25 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
-}, "任务模板", -1);
+}, "标签", -1);
 
 const _hoisted_26 = {
-  class: "property-text"
+  key: 0,
+  style: {
+    "display": "flex",
+    "flex-wrap": "wrap"
+  }
 };
 const _hoisted_27 = {
   class: "flex-row"
@@ -235,14 +240,10 @@ const _hoisted_27 = {
 
 const _hoisted_28 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
-}, "标签", -1);
+}, "任务编号", -1);
 
 const _hoisted_29 = {
-  key: 0,
-  style: {
-    "display": "flex",
-    "flex-wrap": "wrap"
-  }
+  class: "property-text"
 };
 const _hoisted_30 = {
   class: "flex-row"
@@ -250,20 +251,9 @@ const _hoisted_30 = {
 
 const _hoisted_31 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
   class: "property-name"
-}, "任务编号", -1);
-
-const _hoisted_32 = {
-  class: "property-text"
-};
-const _hoisted_33 = {
-  class: "flex-row"
-};
-
-const _hoisted_34 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", {
-  class: "property-name"
 }, "创建日期", -1);
 
-const _hoisted_35 = {
+const _hoisted_32 = {
   key: 0,
   class: "property-text"
 };
@@ -304,7 +294,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })]),
     default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [_hoisted_10]),
     _: 3
-  })) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_11, _hoisted_13))])]), $props.taskInfo.synergicUserInfo && $props.taskInfo.synergicUserInfo.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_14, [$props.taskInfo.synergicUserInfo.length <= 3 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, {
+  })) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])]), $props.taskInfo.synergicUserInfo && $props.taskInfo.synergicUserInfo.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_11, [$props.taskInfo.synergicUserInfo.length <= 3 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, {
     key: 0
   }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo, (item, index) => {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
@@ -327,13 +317,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     },
     placement: "bottomLeft"
   }, {
-    content: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_15, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo.slice(3), (item, index) => {
+    content: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_12, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($props.taskInfo.synergicUserInfo.slice(3), (item, index) => {
       return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
         class: "userCard",
         key: index
       }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(item.name.slice(-2)), 1);
     }), 128))])]),
-    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_16, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(`+${$props.taskInfo.synergicUserInfo.length - 3}`), 1)]),
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_13, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(`+${$props.taskInfo.synergicUserInfo.length - 3}`), 1)]),
     _: 1
   })], 64))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_a_drawer, {
     width: "360",
@@ -348,16 +338,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClose: _cache[1] || (_cache[1] = $event => $options.handleChange(false)),
     visible: $data.drawerVisible
   }, {
-    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_17, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_18, [_hoisted_19, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_20, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_21, [_hoisted_22, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_23, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createByName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_24, [_hoisted_25, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_26, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.templateName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_27, [_hoisted_28, $props.taskInfo.label && $props.taskInfo.label.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_29, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)(JSON.parse($props.taskInfo.label), (item, index) => {
+    default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_14, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_15, [_hoisted_16, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_17, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskName || '万达国际图纸校审'), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_18, [_hoisted_19, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_20, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createByName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_21, [_hoisted_22, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_23, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.templateName), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_24, [_hoisted_25, $props.taskInfo.label && $props.taskInfo.label.length ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_26, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)(JSON.parse($props.taskInfo.label), (item, index) => {
       return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", {
         class: "property-tag",
         key: index
       }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(item.name), 1);
-    }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_30, [_hoisted_31, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_32, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskCode), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_33, [_hoisted_34, $props.taskInfo.createTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_35, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createTime.slice(0, 10)), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])])]),
+    }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_27, [_hoisted_28, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_29, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.taskCode), 1)]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_30, [_hoisted_31, $props.taskInfo.createTime ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("span", _hoisted_32, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.taskInfo.createTime.slice(0, 10)), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])])]),
     _: 1
   }, 8, ["title", "visible"])]);
 }
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=58fe4d6a
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=3c44f64a
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=script&lang=js
 /* harmony default export */ var taskCardvue_type_script_lang_js = ({
@@ -397,10 +387,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-32.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-32.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-32.use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-32.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=style&index=0&id=58fe4d6a&lang=less
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-32.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-32.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-32.use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-32.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/taskCard.vue?vue&type=style&index=0&id=3c44f64a&lang=less
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=58fe4d6a&lang=less
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=3c44f64a&lang=less
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(89);

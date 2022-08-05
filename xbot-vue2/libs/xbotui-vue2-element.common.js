@@ -64,7 +64,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=79acef9a&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=0a3ca1a6&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -121,17 +121,13 @@ var render = function render() {
       "trigger": "hover",
       "placement": "bottom"
     }
-  }, [[_vm._t("buttonList", function () {
-    return [_c('el-button', [_vm._v("dsfdsfdsf")])];
-  })], _c('div', {
+  }, [[_vm._t("buttonList")], _c('div', {
     staticClass: "fontSet",
     attrs: {
       "slot": "reference"
     },
     slot: "reference"
-  }, [_vm._v("...")])], 2) : _c('div', {
-    staticClass: "fontSet"
-  }, [_vm._v("...")])], 1)]), _vm.taskInfo.cooperationUser && _vm.taskInfo.cooperationUser.length ? _c('div', {
+  }, [_vm._v("...")])], 2) : _vm._e()], 1)]), _vm.taskInfo.cooperationUser && _vm.taskInfo.cooperationUser.length ? _c('div', {
     staticClass: "displayUser"
   }, [_vm.taskInfo.cooperationUser.length <= 3 ? _vm._l(_vm.taskInfo.cooperationUser, function (item, index) {
     return _c('div', {
@@ -394,10 +390,10 @@ var staticRenderFns = [];
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js&
  /* harmony default export */ var views_taskCardvue_type_script_lang_js_ = (taskCardvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=79acef9a&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=0a3ca1a6&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=79acef9a&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=0a3ca1a6&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */

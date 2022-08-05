@@ -20,12 +20,10 @@
         <el-popover  :visible-arrow="false" v-if="needButton" trigger="hover" placement="bottom">
           <template >
             <slot name="buttonList" class="buttonList">
-              <el-button>dsfdsfdsf</el-button>
             </slot>
           </template>
           <div slot="reference" class="fontSet">...</div>
         </el-popover>
-        <div  v-else class="fontSet">...</div>
       </div>
     </div>
     <div class="displayUser" v-if="taskInfo.cooperationUser && taskInfo.cooperationUser.length">

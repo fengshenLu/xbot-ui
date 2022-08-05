@@ -25,7 +25,6 @@
           </template>
           <div class="pointSet"><span class="fontSet">...</span></div>
         </a-popover>
-        <div class="pointSet" v-else><span class="fontSet">...</span></div>
       </div>
     </div>
     <div class="displayUser" v-if="taskInfo.synergicUserInfo && taskInfo.synergicUserInfo.length">
