@@ -23,7 +23,7 @@
       </div>
       <div class="flex-row" style="justify-content: space-between;color: #6d7b98;margin-top: 8px">
         <div style="font-size: 12px;display: flex;height: 22px;line-height: 22px" :style="{color: taskInfo.overDueDay > 0 ? '#F43030' : taskInfo.remainDay > warnTime ? '' : '#FF7700'}">
-          <img width="20" height="20" style="margin-top: 1px" src="../assets/timeSmall.png"/>
+          <img width="20" height="20" style="margin-top: 1px" src="../assets/time.svg"/>
           <span style="margin-left: 7px" v-if="taskInfo.deliveryEndTime">{{taskInfo.deliveryEndTime.slice(0,10)}}&ensp;截止&ensp;</span>
           <span v-if="taskInfo.overDueDay > 0">
               逾期{{taskInfo.overDueDay}}天
@@ -235,7 +235,7 @@ export default {
     needButton: {
       type: Boolean,
       default: () => {
-        return true
+        return false
       }
     },
     cardTaskOwnerClass: {
@@ -380,7 +380,7 @@ export default {
 }
 .card {
   width: 358px;
-  height: 200px;
+  height: 180px;
   background: #ffffff;
   border-radius: 4px;
   margin: 8px 16px 8px 0;
