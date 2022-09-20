@@ -3,52 +3,54 @@
     <div class="review-card flex-column">
       <div class="flex-column flex-1">
         <div class="flex-row">
-          <span class="flex-1 sc-title">{{taskInfo.projectName || '中国数字城市档案馆'}}</span>
+          <div class="flex-1 sc-title">
+            <img v-if="projectImg" width="20" height="20" :src="projectImg" style="margin-right: 4px"/>
+            <span style="overflow: hidden;
+                  text-overflow:ellipsis;
+                  white-space:nowrap;">
+                  {{taskInfo.projectName || '中国数字城市档案馆'}}
+            </span>
+          </div>
           <div class="progress-dot" :style="{ backgroundColor: taskInfo.status ? taskInfo.status==1 ? '' : '#8ed226' : '#9DAAC2' }"></div>
           <span class="progress-text">{{taskInfo.status ? taskInfo.status==1 ? '进行中' : '已完成' : '未开始' }}</span>
         </div>
         <div class="title" @click.stop="handleClickTitle" >{{taskInfo.taskName || '万达国际图纸校审'}}</div>
-        <div class="manager-text">主责人：{{taskInfo.mainUser ? taskInfo.mainUser.map(item => item.name).join(' ') : '刘永霖'}}</div>
+        <div class="manager-text">
+          <img  width="20" height="20" style="margin-top: 1px" src="../assets/personalCenter.png"/>
+          <span v-if="taskInfo.mainUser && taskInfo.mainUser.length < 4">{{taskInfo.mainUser.map(item => item.name).join(' ')}}</span>
+          <span v-if="taskInfo.mainUser && taskInfo.mainUser.length >= 4">{{taskInfo.mainUser.map(item => item.name).slice(0,3).join(' ')}}  等{{taskInfo.mainUser.length}}人</span>
+        </div>
       </div>
-      <div class="flex-row" style="justify-content: space-between;color: #6d7b98;">
-        <div style="font-size: 12px;" :style="{color: taskInfo.overDueDay > 0 ? '#F43030' : ''}">
-          <span v-if="taskInfo.deliveryEndTime">{{taskInfo.deliveryEndTime.slice(0,10)}} 截止</span>
+      <div class="flex-row" style="justify-content: space-between;color: #6d7b98;margin-top: 8px">
+        <div style="font-size: 12px;display: flex;height: 22px;line-height: 22px" :style="{color: taskInfo.overDueDay > 0 ? '#F43030' : taskInfo.remainDay > warnTime ? '' : '#FF7700'}">
+          <img width="20" height="20" style="margin-top: 1px" src="../assets/timeSmall.png"/>
+          <span style="margin-left: 7px" v-if="taskInfo.deliveryEndTime">{{taskInfo.deliveryEndTime.slice(0,10)}}&ensp;截止&ensp;</span>
           <span v-if="taskInfo.overDueDay > 0">
-            逾期{{taskInfo.overDueDay}}天
+              逾期{{taskInfo.overDueDay}}天
+          </span>
+          <span v-if="taskInfo.remainDay <= warnTime && taskInfo.overDueDay <= 0">
+              剩余{{taskInfo.remainDay}}天
           </span>
         </div>
-        <el-popover  :visible-arrow="false" v-if="needButton" trigger="hover" placement="bottom">
-          <template >
-            <slot name="buttonList" class="buttonList">
-            </slot>
-          </template>
-          <div slot="reference" class="fontSet">...</div>
-        </el-popover>
       </div>
     </div>
-    <div class="displayUser" v-if="taskInfo.cooperationUser && taskInfo.cooperationUser.length">
-      <template v-if="taskInfo.cooperationUser.length <= 3">
-        <div class="userCard" v-for="(item, index) in taskInfo.cooperationUser" :key="index"  >
-          {{item.name.slice(-2)}}
+    <div class="displayUser" v-if="users.length">
+      <div style="display: flex">
+        <div class="userCard" v-for="(item, index) in users.slice(0, 5)"
+             :key="index"
+             :style="{backgroundColor: colors[index]}"
+        >
+          {{item.name.slice(-1)}}
         </div>
-      </template>
-      <template v-else>
-        <div class="userCard" v-for="(item, index) in taskInfo.cooperationUser.slice(0,3)" :key="index"  >
-          {{item.name.slice(-2)}}
-        </div>
-        <el-popover  :visible-arrow="false" trigger="hover" style="min-width: 130px;background-color: #ffffff" placement="bottom">
-          <template>
-            <div class="displayUser">
-              <div class="userCard" v-for="(item, index) in taskInfo.cooperationUser.slice(3)" :key="index"  >
-                {{item.name.slice(-2)}}
-              </div>
-            </div>
-          </template>
-          <div slot="reference" class="addUser">
-            {{`+${taskInfo.cooperationUser.length - 3}`}}
-          </div>
-        </el-popover>
-      </template>
+        <div v-if="users.length > 5" class="totalUser">共{{users.length}}人</div>
+      </div>
+      <el-popover  :visible-arrow="false" v-if="needButton" trigger="hover" placement="bottom">
+        <template >
+          <slot name="buttonList" class="buttonList">
+          </slot>
+        </template>
+        <div slot="reference" class="fontSet"><span>·</span><span style="margin-left: 2px">·</span><span style="margin-left: 2px">·</span></div>
+      </el-popover>
     </div>
     <el-drawer
         :append-to-body="true"
@@ -90,6 +92,7 @@
 </template>
 
 <script >
+// import png from '../assets/logo.png'
 // import {Popover, Drawer } from 'element-ui'
 // import Vue from 'vue'
 // Vue.use(Popover)
@@ -139,7 +142,7 @@
 //   deliveryEndTime: '2022-07-05 23:59:59',
 //   remainDay: -8,
 //   parentNodeId: '843086403416956928',
-//   label:'',
+//   label:'[{"name": "22"}]',
 //   parentNodeName: '又一个大大项目',
 //   frontLabel: [
 //     '方案技术深化',
@@ -163,6 +166,14 @@
 //     {
 //       name: 'ty',
 //       id: '772760523664060416'
+//     },
+//     {
+//       name: '卢红生',
+//       id: '774200683849117696'
+//     },
+//     {
+//       name: '卢红生',
+//       id: '774200683849117696'
 //     },
 //     {
 //       name: '卢红生',
@@ -200,7 +211,14 @@
 //   projectName: '又一个大大项目',
 //   projectId: '843086390233137152',
 //   status: 2,
-//   cooperationUser: null,
+//   cooperationUser: [
+//     {"name":"何晶晶","id":"774574992593580032"},
+//     {"name":"自动化","id":"823510816874696704"},
+//     {"name":"吴英杰","id":"772516864016314368"},
+//     {"name":"自gt","id":"823510673815375872"},
+//     {"name":"自","id":"823510036398608384"},
+//     {"name":"自动","id":"823510301948383232"}
+//   ],
 //   realityStartTime: null,
 //   realityEndTime: null
 // }
@@ -217,7 +235,7 @@ export default {
     needButton: {
       type: Boolean,
       default: () => {
-        return false
+        return true
       }
     },
     cardTaskOwnerClass: {
@@ -225,12 +243,34 @@ export default {
       default: () => {
         return ''
       }
+    },
+    projectImg: {
+      type: String,
+      default: () => {
+        return ''
+      }
+    },
+    warnTime: {
+      type: Number,
+      default: () => {
+        return 30
+      }
     }
   },
   emits: ['titleClick'],
   data () {
     return {
-      drawerVisible: false
+      drawerVisible: false,
+      colors: ['#FF8052', '#FFC71F', '#1BD3E0', '#2499FF', '#C2A8FF', '#8E6BFF', '#9DAAC2']
+    }
+  },
+  computed: {
+    users() {
+      let list = []
+      let cooperationUser = this.taskInfo.cooperationUser || []
+      let mainUser = this.taskInfo.mainUser || []
+      list = cooperationUser.concat(mainUser)
+      return list
     }
   },
   methods: {
@@ -244,7 +284,18 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
+.drawer-title {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.drawer-body {
+  padding: 0px 20px;
+}
 .el-drawer__body {
   padding: 0 20px;
 }
@@ -261,18 +312,17 @@ export default {
 .displayUser {
   margin-top: 12px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   .userCard {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(135deg,#9daac2, #6d7b98);
+    width: 20px;
+    height: 20px;
+    background: #ff8052;
     border-radius: 2px;
-    font-size: 10px;
-    font-weight: 500;
     text-align: center;
     color: #ffffff;
-    line-height: 32px;
+    line-height: 20px;
     margin-right: 4px;
+    font-size: 12px;
   }
   .addUser {
     width: 32px;
@@ -284,6 +334,14 @@ export default {
     color: #3c3a38;
     line-height: 32px;
   }
+  .totalUser {
+    margin-left: 8px;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6d7b98;
+  }
 }
 .flex-row {
   display: flex;
@@ -294,11 +352,15 @@ export default {
   flex-direction: column;
 }
 .property-name {
+  min-width: 72px;
   width: 72px;
   color: #6D7B98;
 }
 .property-text {
   color: black;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 .property-text, .property-name, .property-tag {
   margin-bottom: 16px;
@@ -324,22 +386,22 @@ export default {
   margin: 8px 16px 8px 0;
   padding: 16px;
   box-shadow: 0 2px 12px 0 #fffefe;
+  .fontSet {
+    color: #6D7B98;
+    line-height: 13px;
+    cursor: pointer;
+    display: inline-block;
+  }
   .review-card {
     display: flex;
     background-color: #FFFFFF;
     width: 100%;
-    height: 126px;
     border-radius: 5px;
+    margin-bottom: 8px;
     .sc-title {
       font-size: 14px;
       color: #47516A;
       line-height: 20px;
-    }
-    .fontSet {
-      transform: scale(1.5);
-      line-height: 13px;
-      cursor: pointer;
-      display: inline-block;
     }
     .pointSet {
       width: 80px;
@@ -362,17 +424,29 @@ export default {
     }
     .title {
       margin-top: 8px;
+      margin-bottom: 12px;
       font-size: 16px;
       font-weight: 600;
+      height: 24px;
+      line-height: 24px;
       color: #2A334A;
       cursor: pointer;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
       &:hover {
         color:#F65D30;
       }
     }
     .manager-text {
-      font-size: 14px;
-      margin-top: 4px;
+      font-size: 12px;
+      height: 22px;
+      line-height: 22px;
+      color: #47516A;
+      display: flex;
+      span {
+        margin-left: 7px;
+      }
     }
     .dead-line {
       font-size: 12px;
@@ -384,14 +458,6 @@ export default {
     .extra-button {
       font-size: 22px;
       cursor: pointer;
-    }
-    .drawer-title {
-      font-size: 16px;
-      font-weight: 600;
-      color: black;
-    }
-    .drawer-body {
-      padding: 0px 24px;
     }
     .property-tag {
       padding: 2px 8px;
