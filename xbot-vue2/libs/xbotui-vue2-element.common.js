@@ -98,7 +98,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=494cfe63&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=8d675f76&scoped=true&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -189,7 +189,7 @@ var render = function render() {
       "xmlns": "http://www.w3.org/2000/svg",
       "xmlns:xlink": "http://www.w3.org/1999/xlink"
     }
-  }, [_c('title', [_vm._v("编组 6")]), _c('g', {
+  }, [_c('g', {
     attrs: {
       "id": "丰富卡片",
       "stroke": "none",
@@ -232,7 +232,12 @@ var render = function render() {
       "fill": "#6D7B98",
       "fill-rule": "nonzero"
     }
-  })])])])])])]), _vm.taskInfo.deliveryEndTime ? _c('span', {
+  })])])])])])]), !_vm.taskInfo.deliveryEndTime ? _c('span', {
+    staticStyle: {
+      "margin-left": "7px",
+      "color": "#47516a"
+    }
+  }, [_vm._v("-")]) : _vm._e(), _vm.taskInfo.deliveryEndTime ? _c('span', {
     staticStyle: {
       "margin-left": "7px"
     }
@@ -341,7 +346,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=494cfe63&scoped=true&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=8d675f76&scoped=true&
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=script&lang=js&
 // import png from '../assets/logo.png'
@@ -541,10 +546,10 @@ var staticRenderFns = [];
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js&
  /* harmony default export */ var views_taskCardvue_type_script_lang_js_ = (taskCardvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=494cfe63&prod&lang=scss&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=8d675f76&prod&lang=scss&scoped=true&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=494cfe63&prod&lang=scss&scoped=true&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=8d675f76&prod&lang=scss&scoped=true&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -659,7 +664,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "494cfe63",
+  "8d675f76",
   null
   
 )

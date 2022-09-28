@@ -24,7 +24,6 @@
       <div class="flex-row" style="justify-content: space-between;color: #6d7b98;margin-top: 8px">
         <div style="font-size: 12px;display: flex;height: 22px;line-height: 22px" :style="{color: taskInfo.overDueDay > 0 ? '#F43030' : taskInfo.remainDay > warnTime ? '' : '#FF7700'}">
           <svg style="margin-top: 1px" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>编组 6</title>
             <g id="丰富卡片" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="优化" transform="translate(-592.000000, -645.000000)">
                 <g id="编组-8" transform="translate(116.000000, 195.000000)">
@@ -38,6 +37,7 @@
               </g>
             </g>
           </svg>
+          <span style="margin-left: 7px;color:#47516a" v-if="!taskInfo.deliveryEndTime">-</span>
           <span style="margin-left: 7px" v-if="taskInfo.deliveryEndTime">{{taskInfo.deliveryEndTime.slice(0,10)}}&ensp;截止&ensp;</span>
           <span v-if="taskInfo.overDueDay > 0">
               逾期{{taskInfo.overDueDay}}天
