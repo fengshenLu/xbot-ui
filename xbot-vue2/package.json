@@ -1,6 +1,6 @@
 {
   "name": "xbotui-vue2-element",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "luhs",
   "private": false,
   "license": "MIT",
@@ -31,6 +31,9 @@
     "vue-template-compiler": "^2.6.14"
   },
   "main": "libs/xbotui-vue2-element.common.js",
+  "files": [
+    "libs"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {

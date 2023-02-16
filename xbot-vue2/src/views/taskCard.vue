@@ -1,5 +1,5 @@
 <template>
-  <div class='card' :class="cardTaskOwnerClass" @click="drawerVisible = true">
+  <div class='card' :class="cardTaskOwnerClass" @click="handleClickBody">
     <div class="review-card flex-column">
       <div class="flex-column flex-1">
         <div class="flex-row">
@@ -269,9 +269,15 @@ export default {
       default: () => {
         return 30
       }
+    },
+    bodyClickSet: {
+      type: Boolean,
+      default: () => {
+        return false
+      }
     }
   },
-  emits: ['titleClick'],
+  emits: ['titleClick', 'bodyClick'],
   data () {
     return {
       drawerVisible: false,
@@ -288,6 +294,13 @@ export default {
     }
   },
   methods: {
+    handleClickBody() {
+       if(this.bodyClickSet) {
+         this.$emit('bodyClick', JSON.parse(JSON.stringify(this.taskInfo)))
+       } else {
+         this.drawerVisible = true
+       }
+    },
     handleChange (value) {
       this.drawerVisible = value
     },
