@@ -14,11 +14,15 @@
           <div class="progress-dot" :style="{ backgroundColor: taskInfo.status ? taskInfo.status==1 ? '' : '#8ed226' : '#9DAAC2' }"></div>
           <span class="progress-text">{{taskInfo.status ? taskInfo.status==1 ? '进行中' : '已完成' : '未开始' }}</span>
         </div>
-        <div class="title" @click.stop="handleClickTitle" >{{taskInfo.taskName || '万达国际图纸校审'}}</div>
+        <div class="title"  >
+          <span @click.stop="handleClickTitle">
+            {{taskInfo.taskName || '万达国际图纸校审'}}
+          </span>
+        </div>
         <div class="manager-text">
           <img  width="20" height="20" style="margin-top: 1px" src="../assets/personalCenter.png"/>
-          <span v-if="taskInfo.mainUser && taskInfo.mainUser.length < 4">{{taskInfo.mainUser.map(item => item.name).join(' ')}}</span>
-          <span v-if="taskInfo.mainUser && taskInfo.mainUser.length >= 4">{{taskInfo.mainUser.map(item => item.name).slice(0,3).join(' ')}}  等{{taskInfo.mainUser.length}}人</span>
+          <span >{{taskInfo.createByName}}</span>
+<!--          <span v-if="taskInfo.mainUser && taskInfo.mainUser.length >= 4">{{taskInfo.mainUser.map(item => item.name).slice(0,3).join(' ')}}  等{{taskInfo.mainUser.length}}人</span>-->
         </div>
       </div>
       <div class="flex-row" style="justify-content: space-between;color: #6d7b98;margin-top: 8px">
@@ -289,7 +293,7 @@ export default {
       let list = []
       let cooperationUser = this.taskInfo.cooperationUser || []
       let mainUser = this.taskInfo.mainUser || []
-      list = cooperationUser.concat(mainUser)
+      list = mainUser.concat(cooperationUser)
       return list
     }
   },
@@ -457,10 +461,12 @@ export default {
       height: 24px;
       line-height: 24px;
       color: #2A334A;
-      cursor: pointer;
       overflow: hidden;
       text-overflow:ellipsis;
       white-space:nowrap;
+      span{
+        cursor: pointer;
+      }
       &:hover {
         color:#F65D30;
       }
