@@ -76,7 +76,7 @@
         :modal="false"
         :visible.sync="drawerVisible"
       >
-      <span slot="title" class="drawer-title">{{taskInfo.projectName}}</span>
+      <span slot="title" class="drawer-title">{{`${taskInfo.projectName}-${taskInfo.masterProjectName || ''}`}}</span>
       <span class="flex-column drawer-body">
                 <span class="flex-row">
                       <span class="property-name">任务名称</span>
@@ -92,8 +92,8 @@
                 </span>
                 <span class="flex-row">
                       <span class="property-name">标签</span>
-                      <div v-if='taskInfo.label && taskInfo.label.length' style='display: flex; flex-wrap: wrap'>
-                         <span v-for="(item,index) in JSON.parse(taskInfo.label)" class="property-tag" :key="index">{{item.name}}</span>
+                      <div v-if='taskInfo.frontLabel && taskInfo.frontLabel.length' style='display: flex; flex-wrap: wrap'>
+                         <span v-for="(item,index) in taskInfo.frontLabel" class="property-tag" :key="index">{{item}}</span>
                       </div>
                 </span>
                 <span class="flex-row">
