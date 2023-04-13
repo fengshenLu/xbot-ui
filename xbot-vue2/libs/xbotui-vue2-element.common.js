@@ -98,7 +98,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=0ba74fe4&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=template&id=26939423&scoped=true&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -132,7 +132,7 @@ var render = function render() {
       "text-overflow": "ellipsis",
       "white-space": "nowrap"
     }
-  }, [_vm._v(" " + _vm._s(_vm.taskInfo.projectName || '中国数字城市档案馆') + " ")])]), _c('div', {
+  }, [_vm._v(" " + _vm._s(`${_vm.taskInfo.projectName}${_vm.taskInfo.masterProjectName ? '-' + _vm.taskInfo.masterProjectName : ''}`) + " ")])]), _c('div', {
     staticClass: "progress-dot",
     style: {
       backgroundColor: _vm.taskInfo.status ? _vm.taskInfo.status == 1 ? '' : '#8ed226' : '#9DAAC2'
@@ -140,14 +140,15 @@ var render = function render() {
   }), _c('span', {
     staticClass: "progress-text"
   }, [_vm._v(_vm._s(_vm.taskInfo.status ? _vm.taskInfo.status == 1 ? '进行中' : '已完成' : '未开始'))])]), _c('div', {
-    staticClass: "title",
+    staticClass: "title"
+  }, [_c('span', {
     on: {
       "click": function ($event) {
         $event.stopPropagation();
         return _vm.handleClickTitle.apply(null, arguments);
       }
     }
-  }, [_vm._v(_vm._s(_vm.taskInfo.taskName || '万达国际图纸校审'))]), _c('div', {
+  }, [_vm._v(" " + _vm._s(_vm.taskInfo.taskName || '万达国际图纸校审') + " ")])]), _c('div', {
     staticClass: "manager-text"
   }, [_c('img', {
     staticStyle: {
@@ -158,7 +159,7 @@ var render = function render() {
       "height": "20",
       "src": __webpack_require__(287)
     }
-  }), _vm.taskInfo.mainUser && _vm.taskInfo.mainUser.length < 4 ? _c('span', [_vm._v(_vm._s(_vm.taskInfo.mainUser.map(item => item.name).join(' ')))]) : _vm._e(), _vm.taskInfo.mainUser && _vm.taskInfo.mainUser.length >= 4 ? _c('span', [_vm._v(_vm._s(_vm.taskInfo.mainUser.map(item => item.name).slice(0, 3).join(' ')) + " 等" + _vm._s(_vm.taskInfo.mainUser.length) + "人")]) : _vm._e()])]), _c('div', {
+  }), _c('span', [_vm._v(_vm._s(_vm.taskInfo.createByName))])])]), _c('div', {
     staticClass: "flex-row",
     staticStyle: {
       "justify-content": "space-between",
@@ -293,7 +294,7 @@ var render = function render() {
       "slot": "title"
     },
     slot: "title"
-  }, [_vm._v(_vm._s(_vm.taskInfo.projectName))]), _c('span', {
+  }, [_vm._v(_vm._s(`${_vm.taskInfo.projectName}${_vm.taskInfo.masterProjectName ? '-' + _vm.taskInfo.masterProjectName : ''}`))]), _c('span', {
     staticClass: "flex-column drawer-body"
   }, [_c('span', {
     staticClass: "flex-row"
@@ -317,16 +318,16 @@ var render = function render() {
     staticClass: "flex-row"
   }, [_c('span', {
     staticClass: "property-name"
-  }, [_vm._v("标签")]), _vm.taskInfo.label && _vm.taskInfo.label.length ? _c('div', {
+  }, [_vm._v("标签")]), _vm.taskInfo.frontLabel && _vm.taskInfo.frontLabel.length ? _c('div', {
     staticStyle: {
       "display": "flex",
       "flex-wrap": "wrap"
     }
-  }, _vm._l(JSON.parse(_vm.taskInfo.label), function (item, index) {
+  }, _vm._l(_vm.taskInfo.frontLabel, function (item, index) {
     return _c('span', {
       key: index,
       staticClass: "property-tag"
-    }, [_vm._v(_vm._s(item.name))]);
+    }, [_vm._v(_vm._s(item))]);
   }), 0) : _vm._e()]), _c('span', {
     staticClass: "flex-row"
   }, [_c('span', {
@@ -344,7 +345,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=0ba74fe4&scoped=true&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=template&id=26939423&scoped=true&
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=script&lang=js&
 // import png from '../assets/logo.png'
@@ -532,7 +533,7 @@ var staticRenderFns = [];
       let list = [];
       let cooperationUser = this.taskInfo.cooperationUser || [];
       let mainUser = this.taskInfo.mainUser || [];
-      list = cooperationUser.concat(mainUser);
+      list = mainUser.concat(cooperationUser);
       return list;
     }
 
@@ -558,10 +559,10 @@ var staticRenderFns = [];
 });
 ;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=script&lang=js&
  /* harmony default export */ var views_taskCardvue_type_script_lang_js_ = (taskCardvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=0ba74fe4&prod&lang=scss&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/taskCard.vue?vue&type=style&index=0&id=26939423&prod&lang=scss&scoped=true&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=0ba74fe4&prod&lang=scss&scoped=true&
+;// CONCATENATED MODULE: ./src/views/taskCard.vue?vue&type=style&index=0&id=26939423&prod&lang=scss&scoped=true&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -676,7 +677,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "0ba74fe4",
+  "26939423",
   null
   
 )

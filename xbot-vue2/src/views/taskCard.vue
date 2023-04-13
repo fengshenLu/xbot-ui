@@ -8,7 +8,7 @@
             <span style="overflow: hidden;
                   text-overflow:ellipsis;
                   white-space:nowrap;">
-                  {{taskInfo.projectName || '中国数字城市档案馆'}}
+                  {{`${taskInfo.projectName}${taskInfo.masterProjectName ? '-' + taskInfo.masterProjectName : ''}`}}
             </span>
           </div>
           <div class="progress-dot" :style="{ backgroundColor: taskInfo.status ? taskInfo.status==1 ? '' : '#8ed226' : '#9DAAC2' }"></div>
@@ -76,7 +76,7 @@
         :modal="false"
         :visible.sync="drawerVisible"
       >
-      <span slot="title" class="drawer-title">{{`${taskInfo.projectName}-${taskInfo.masterProjectName || ''}`}}</span>
+      <span slot="title" class="drawer-title">{{`${taskInfo.projectName}${taskInfo.masterProjectName ? '-' + taskInfo.masterProjectName : ''}`}}</span>
       <span class="flex-column drawer-body">
                 <span class="flex-row">
                       <span class="property-name">任务名称</span>
